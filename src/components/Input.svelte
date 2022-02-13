@@ -97,6 +97,7 @@
     max="100"
     placeholder="Write your {input.subject} score"
     class="w-full p-2 outline-none border border-slate-600 rounded mb-3 text-black"
+    data-testid="score-input"
     bind:value={input.score}
   />
 </label>

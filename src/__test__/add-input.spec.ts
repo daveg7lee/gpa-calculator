@@ -21,5 +21,3 @@ test('should render one input & one button', () => {
   expect(button).toHaveTextContent('Add');
   expect(input).toHaveAttribute('placeholder', 'Add new Subject you want');
 });
-
-test('should');
