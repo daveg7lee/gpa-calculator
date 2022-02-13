@@ -22,7 +22,6 @@
     inputs = inputs.filter((item) => {
       return item.id !== input.id;
     });
-    console.log(inputs);
   };
 </script>
 
@@ -97,7 +96,7 @@
     min="0"
     max="100"
     placeholder="Write your {input.subject} score"
-    class="w-full p-2 outline-none border border-slate-600 rounded mb-2 text-black"
+    class="w-full p-2 outline-none border border-slate-600 rounded mb-3 text-black"
     bind:value={input.score}
   />
 </label>

@@ -1,8 +1,8 @@
 <script>
-  import Header from '$components/Header.svelte';
-  import Result from '$components/Result.svelte';
-  import AddInput from '$components/AddInput.svelte';
-  import Input from '$components/Input.svelte';
+  import Header from '../components/Header.svelte';
+  import Result from '../components/Result.svelte';
+  import AddInput from '../components/AddInput.svelte';
+  import Input from '../components/Input.svelte';
 
   let inputs = [
     {
@@ -11,7 +11,6 @@
       id: Date.now().toString(36) + Math.random().toString(36).substr(2),
     },
   ];
-  let subject = '';
 
   $: average = Math.round(
     inputs.map((item) => item.score).reduce((prev, curr) => prev + curr, 0) /
@@ -50,7 +49,7 @@
     {#each inputs as input}
       <Input bind:input bind:inputs />
     {/each}
-    <AddInput bind:subject bind:inputs />
+    <AddInput bind:inputs />
   </div>
   <Result bind:average bind:gpa />
   <a

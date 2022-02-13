@@ -1,5 +1,5 @@
 <script>
-  export let subject;
+  let subject;
   export let inputs;
 
   const handleSubmit = () => {

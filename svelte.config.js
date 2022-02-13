@@ -10,14 +10,6 @@ const config = {
 
   kit: {
     adapter: adapter(),
-    vite: {
-      resolve: {
-        alias: {
-          $src: path.resolve('./src'),
-          $components: path.resolve('./src/components'),
-        },
-      },
-    },
   },
 };
 

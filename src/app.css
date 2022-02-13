@@ -6,9 +6,9 @@ main {
     max-width: 380px;
     margin: 0 auto;
     padding: 0 1rem;
-    min-height: 100vh;
 }
 
 body {
+    min-height: 100vh;
     @apply dark:bg-zinc-800 dark:text-white;
 }
